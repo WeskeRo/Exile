@@ -1,0 +1,9 @@
+infi new
+infistar_old
+/MPMSION/*.pbo
+/MPMSION/*.bak
+/MPMSION/Exile.Altis/infiSTAR_AdminMenu.hpp
+/MPMSION/Exile.Altis/CfgRemoteExec.hpp
+/MPMSION/Exile.Altis/call.fsm
+/SERVER/@ExileServer/addons/*.pbo
+/SERVER/@ExileServer/addons/*.bak
