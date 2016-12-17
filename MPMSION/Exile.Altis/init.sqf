@@ -1,2 +1,2 @@
-// Igiload
-[] execVM "IgiLoad\IgiLoadInit.sqf";
+//R3F
+[]execVM "R3F_LOG\init.sqf";

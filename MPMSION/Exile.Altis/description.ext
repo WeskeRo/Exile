@@ -67,7 +67,7 @@ showHUD[] =
 #include "config.cpp"
 #include "CfgRemoteExec.hpp"
 #include "infiSTAR_AdminMenu.hpp"
-
+#include "R3F_LOG\desc_include.h"
 
 //class CfgRemoteExec
 //{
