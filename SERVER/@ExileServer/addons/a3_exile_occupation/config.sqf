@@ -42,7 +42,7 @@ SC_processReporter				= true;                 	// log the a list of active serve
 SC_fastNights               	= true;						// true if you want night time to go faster than daytime
 SC_occupyPlaces 				= true;						// true if you want villages,towns,cities patrolled by bandits
 SC_occupyTraders            	= true;						// true if you want to create trader camps at positions specified in SC_occupyTraderDetails
-SC_occupyStatic	 		    	= false;		    		// true if you want to add AI in specific locations
+SC_occupyStatic	 		    	= true;		    		// true if you want to add AI in specific locations
 SC_occupyTransport 	        	= true;						// true if you want pubic transport (travels between traders)
 SC_occupyLootCrates		    	= true;						// true if you want to have random loot crates with guards
 SC_occupyRandomSpawn        	= false;                		// (WORK IN PROGRESS) true if you want random spawning AI that hunt for nearby players
@@ -143,7 +143,7 @@ SC_occupyLootCratesLocations	= [
                                     [3000,3000,0],
                                     [4000,4000,0]
                                 ];
-SC_numberofLootCrates       	= 6;                    	// if SC_occupyLootCrates = true spawn this many loot crates (overrided below for Namalsk)
+SC_numberofLootCrates       	= 3;                    	// if SC_occupyLootCrates = true spawn this many loot crates (overrided below for Namalsk)
 SC_LootCrateGuards          	= 5;                    	// number of AI to spawn at each crate
 SC_LootCrateGuardsRandomize 	= true;                 	// Use a random number of guards up to a maximum = SC_LootCrateGuards (so between 1 and SC_LootCrateGuards)
 SC_occupyLootCratesMarkers		= true;						// true if you want to have markers on the loot crate spawns
