@@ -4652,11 +4652,15 @@ class Glasses
 		{
 			"launch_NLAW_F",
 			"launch_RPG32_F",
-			"launch_RPG7_F", 
+			"launch_RPG7_F",
+			"launch_B_Titan_F",
 			"NLAW_F",
 			"RPG32_F",
 			"RPG32_HE_F",
-			"RPG7_F"
+			"RPG7_F",
+			"Titan_AA",
+			"Titan_AT",
+			"Titan_AP"
 		};
 	};
 
