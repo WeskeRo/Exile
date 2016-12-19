@@ -45,7 +45,7 @@ SC_occupyTraders            	= true;						// true if you want to create trader c
 SC_occupyStatic	 		    	= false;		    		// true if you want to add AI in specific locations
 SC_occupyTransport 	        	= true;						// true if you want pubic transport (travels between traders)
 SC_occupyLootCrates		    	= true;						// true if you want to have random loot crates with guards
-SC_occupyRandomSpawn        	= true;                		// (WORK IN PROGRESS) true if you want random spawning AI that hunt for nearby players
+SC_occupyRandomSpawn        	= false;                		// (WORK IN PROGRESS) true if you want random spawning AI that hunt for nearby players
 SC_occupyMilitary 		    	= false;			    	// true if you want military buildings patrolled
 SC_occupyVehicle				= true;						// true if you want to have roaming AI land vehicles
 SC_occupySky					= true;						// true if you want to have roaming AI helis
@@ -81,7 +81,7 @@ SC_randomSpawnTargetBambis		= false;					// true if you want to allow random spa
 //	Occupy Places Setup
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-SC_occupyPlacesSurvivors		= true;						// true if you want a chance to spawn survivor AI as well as bandits (SC_occupyPlaces must be true to use this option)
+SC_occupyPlacesSurvivors		= false;						// true if you want a chance to spawn survivor AI as well as bandits (SC_occupyPlaces must be true to use this option)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	Trader Base Setup
@@ -97,7 +97,9 @@ SC_occupyTraderDetails      	= [
 //	Occupy Static Setup
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 
-SC_staticBandits            	= [		//[[pos],ai count,radius,search buildings]	
+SC_staticBandits            	= [		//[[pos],ai count,radius,search buildings]
+									[[12340.4,15682.7,0.00149155],8,250,true],
+									[[17098.3,10009.9,0.00165749],8,250,true]
     
 								  ];     
 SC_staticSurvivors          	= [		//[[pos],ai count,radius,search buildings]
@@ -142,7 +144,7 @@ SC_occupyLootCratesLocations	= [
                                     [4000,4000,0]
                                 ];
 SC_numberofLootCrates       	= 6;                    	// if SC_occupyLootCrates = true spawn this many loot crates (overrided below for Namalsk)
-SC_LootCrateGuards          	= 2;                    	// number of AI to spawn at each crate
+SC_LootCrateGuards          	= 5;                    	// number of AI to spawn at each crate
 SC_LootCrateGuardsRandomize 	= true;                 	// Use a random number of guards up to a maximum = SC_LootCrateGuards (so between 1 and SC_LootCrateGuards)
 SC_occupyLootCratesMarkers		= true;						// true if you want to have markers on the loot crate spawns
 
@@ -197,8 +199,8 @@ SC_blackListedAreas         	=   [
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////								
 
 SC_occupyHeliCrashes			= true;					// true if you want to have Dayz style helicrashes
-SC_numberofHeliCrashesFire  	= true;                 // true if you want the crash on fire, false if you just want smoke
-SC_numberofHeliCrashes      	= 5;                    // if SC_occupyHeliCrashes = true spawn this many loot crates
+SC_numberofHeliCrashesFire  	= false;                 // true if you want the crash on fire, false if you just want smoke
+SC_numberofHeliCrashes      	= 15;                    // if SC_occupyHeliCrashes = true spawn this many loot crates
 
 // Array of possible common items to go in heli crash crates ["classname",fixed amount,random amount] NOT INCLUDING WEAPONS
 // ["HandGrenade",0,2] this example would add between 0 and 2 HandGrenade to the crate (fixed 0 plus 0-2 random)
@@ -242,7 +244,7 @@ SC_maximumCrewAmount        	= 3;     	// Maximum amount of AI allowed in a vehi
 //	Roaming Land Vehicle Setup
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-SC_maxNumberofVehicles 	    	= 3;		// How many roaming vehicles to spawn	
+SC_maxNumberofVehicles 	    	= 5;		// How many roaming vehicles to spawn	
 SC_occupyVehicleIgnoreCount		= false;	// true if you want spawn vehicles regardless of overall AI count
 SC_occupyVehiclesLocked			= false;	// true if AI vehicles to stay locked until all the linked AI are dead		
 SC_occupyVehicleSurvivors		= false;	// true if you want a chance to spawn survivor AI as well as bandits (SC_occupyVehicle must be true to use this option)
@@ -278,12 +280,12 @@ SC_VehicleClassToUseRare		=   [
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////								
 																					
 // Settings for roaming airborne AI (non armed helis will just fly around)
-SC_maxNumberofHelis		    	= 1;
+SC_maxNumberofHelis		    	= 5;
 
 // Array of aircraft which can be used by AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)
 SC_HeliClassToUse 		    	=   [ ["Exile_Chopper_Huey_Armed_Green",0] ];
 
-SC_occupyHeliUseFixedPos		= true;		// True if you want to specify the patrol positions and radius of the area to patrol / false for random
+SC_occupyHeliUseFixedPos		= false;		// True if you want to specify the patrol positions and radius of the area to patrol / false for random
 
 											// if you set SC_maxNumberofHelis higher than the number of static positions, the remainder will be random
 											// they will also ignore any blacklisted areas
@@ -299,7 +301,7 @@ SC_occupyHeliFixedPositions		= [
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Settings for roaming seaborne AI (non armed boats will just sail around)
-SC_maxNumberofBoats		    = 1;
+SC_maxNumberofBoats		    = 0;
 
 // Array of boats which can be used by AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)
 SC_BoatClassToUse 		    =   [	
