@@ -2947,8 +2947,8 @@ class CfgExileCustomCode
 	ExileClient_gui_wasteDumpDialog_event_onSellButtonClick			=   "custom\ExileClient_gui_wasteDumpDialog_event_onSellButtonClick.sqf"; // Vehicle sell dupe fix
 
 	//ExAd XM8
-	ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
-	ExileClient_gui_xm8_show = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";
+	//ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
+	//ExileClient_gui_xm8_show = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";
 
 };
 class CfgExileEnvironment
