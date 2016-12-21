@@ -1,4 +1,4 @@
-/*
+mm/*
 	Zupa's Capture Points
 	Configuration of ZCP
 	Capture points and earn rewards.

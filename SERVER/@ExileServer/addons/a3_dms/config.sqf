@@ -40,7 +40,7 @@ DMS_Use_Map_Config = true;	// Whether or not to use config overwrites specific t
 	For any questions regarding map-specific configs, please leave a reply in the DMS thread on the Exile forums.
 */
 
-DMS_Enable_RankChange = false; // Whether or not to use Rank Changes. (Required 'true' if using Occupation)
+DMS_Enable_RankChange = true; // Whether or not to use Rank Changes. (Required 'true' if using Occupation)
 /*
 	I am sharing this upgrade to all. If you utilize GR8 Humanity (fully compatible) or a custom version of a ranking system(simple variable changes), this will allow your players to score +/- for Bandit and Hero kills as well as a custom Survivor Faction added to DMS as well. You can still utilize the HERO / BANDIT / SURVIVOR respect and poptab settings for gameplay :) ENJOY! DONKEYPUNCH.INFO!
 */
@@ -52,7 +52,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 /* Mission System Settings */
 	/*General settings for dynamic missions*/
 	DMS_DynamicMission					= true;						// Enable/disable dynamic mission system.
-	DMS_MaxBanditMissions				= 3;						// Maximum number of Bandit Missions running at the same time
+	DMS_MaxBanditMissions				= 5;						// Maximum number of Bandit Missions running at the same time
 	DMS_TimeToFirstMission				= [180,420];				// [Minimum,Maximum] time between first mission spawn. | DEFAULT: 3-7 minutes.
 	DMS_TimeBetweenMissions				= [600,900];				// [Minimum,Maximum] time between missions (if mission limit is not reached) | DEFAULT: 10-15 mins
 	DMS_MissionTimeOut					= [900,1800]; 				// [Minimum,Maximum] time it will take for a mission to timeout | DEFAULT: 15-30 mins
@@ -269,7 +269,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_StaticMissionTypes =			[								// List of STATIC missions with spawn chances.
 											//["saltflats",1]			//<--Example (already imported by default on Altis in map configs)
 											//["slums",1]				//<--Example (already imported by default on Altis in map configs)
-											//["occupation",1]		//<--Example
+											["occupation",1]		//<--Example
 											//["sectorB",1]			//<--Example for Taviana
 										];
 
@@ -285,7 +285,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_StaticMissionsOnServerStart =	[								// List of STATIC missions with spawn chances.
 											//"saltflats"			//<--Example
 											//"slums"				//<--Example
-											//"occupation"			//<--Example
+											"occupation"			//<--Example
 											//"sectorB"				//<--Example for Taviana
 										];
 
