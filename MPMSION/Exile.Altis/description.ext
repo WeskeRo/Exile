@@ -68,28 +68,28 @@ showHUD[] =
 #include "CfgRemoteExec.hpp"
 #include "infiSTAR_AdminMenu.hpp"
 #include "R3F_LOG\desc_include.h"
+#include "ExAdClient\ExAd.cpp"
 
-//class CfgRemoteExec
-//{
-//   class Functions
-//    {
-//        mode = 1;
-//        jip = 0;
-//
-//        class ExileServer_system_network_dispatchIncomingMessage
-//        {
-//            allowedTargets = 2;
-//        };
-//    };
-//
-//   class Commands
-//    {
-//		mode = 0;
-//		jip = 0;
-//    };
-//};
+//class CfgRemoteExec  poszlo do osobnego pliku hpp! INFISTAR
+
+
+class CfgFunctions
+{
+	#include "ExAdClient\CfgFunctions.cpp"
+};
 
 class RscTitles
  {
      #include "addons\statusbar\statusbar.hpp"
+	 #include "ExAdClient\RscTitles.cpp"
  }; 
+ 
+ class CfgNetworkMessages
+{
+	#include "ExAdClient\CfgNetworkMessages.cpp"
+};
+
+class CfgHints
+{
+	#include "ExAdClient\CfgHints.cpp"
+};

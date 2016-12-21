@@ -10,7 +10,7 @@
  */
  class CfgXM8
 {
-	extraApps[] = {"ExAd_CHVD"};
+	extraApps[] = {"ExAd_CHVD","ExAd_VG"};
 	
 
 	class ExAd_CHVD 
@@ -23,6 +23,14 @@
 		onOpen = "ExAdClient\XM8\Apps\CHVD\onOpen.sqf";
 		onClose = "ExAdClient\XM8\Apps\CHVD\onClose.sqf";
 	};		
+	class ExAd_VG 
+    {
+        title = "Virtual Garage";
+        controlID = 50000;                  //IDC:50000 -> 50014
+        onLoad = "ExAdClient\XM8\Apps\VG\onLoad.sqf";
+        onOpen = "ExAdClient\XM8\Apps\VG\onOpen.sqf";
+        onClose = "ExAdClient\XM8\Apps\VG\onClose.sqf";
+    };
 }; 
 
 class CfgClans
@@ -2939,6 +2947,13 @@ class CfgExileCustomCode
 
 		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
 	*/
+	//XM8 
+	ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
+    ExileClient_gui_xm8_show = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";  
+	
+	//VIRTUAL GARAGE
+	ExileServer_system_territory_database_load = "ExAdClient\VirtualGarage\CustomCode\ExileServer_system_territory_database_load.sqf";  
+	
 	//Sell From Crates
 	ExileClient_gui_wasteDumpDialog_show							=	"custom\ExileClient_gui_wasteDumpDialog_show.sqf";  //Sell Crates fix
 	ExileClient_gui_traderDialog_updateInventoryDropdown			=	"custom\ExileClient_gui_traderDialog_updateInventoryDropdown.sqf";  //Sell Crates fix
