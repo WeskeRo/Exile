@@ -38,17 +38,17 @@ SC_useWaypoints					= true;                 	// When spawning AI create waypoint
 //	Turn Modules On or Off (can be overridden in the map overrides section)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-SC_processReporter				= true;                 	// log the a list of active server processes every 60 seconds (useful for debugging server problems)
+SC_processReporter				= false;                 	// log the a list of active server processes every 60 seconds (useful for debugging server problems)
 SC_fastNights               	= true;						// true if you want night time to go faster than daytime
 SC_occupyPlaces 				= false;						// true if you want villages,towns,cities patrolled by bandits
 SC_occupyTraders            	= false;						// true if you want to create trader camps at positions specified in SC_occupyTraderDetails
 SC_occupyStatic	 		    	= false;		    		// true if you want to add AI in specific locations
-SC_occupyTransport 	        	= true;						// true if you want pubic transport (travels between traders)
+SC_occupyTransport 	        	= false;						// true if you want pubic transport (travels between traders)
 SC_occupyLootCrates		    	= true;						// true if you want to have random loot crates with guards
 SC_occupyRandomSpawn        	= false;                		// (WORK IN PROGRESS) true if you want random spawning AI that hunt for nearby players
 SC_occupyMilitary 		    	= false;			    	// true if you want military buildings patrolled
-SC_occupyVehicle				= false;						// true if you want to have roaming AI land vehicles
-SC_occupySky					= false;						// true if you want to have roaming AI helis
+SC_occupyVehicle				= true;						// true if you want to have roaming AI land vehicles
+SC_occupySky					= true;						// true if you want to have roaming AI helis
 SC_occupySea					= false;					// true if you want to have roaming AI boats
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -280,7 +280,7 @@ SC_VehicleClassToUseRare		=   [
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////								
 																					
 // Settings for roaming airborne AI (non armed helis will just fly around)
-SC_maxNumberofHelis		    	= 5;
+SC_maxNumberofHelis		    	= 2;
 
 // Array of aircraft which can be used by AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)
 SC_HeliClassToUse 		    	=   [ ["Exile_Chopper_Huey_Armed_Green",0] ];
