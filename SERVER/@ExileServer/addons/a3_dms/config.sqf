@@ -19,13 +19,13 @@
 #define USE_MARKSMAN_DLC_WEAPONS_IN_CRATES 1
 
 // Uncomment this if you want Apex weapons on AI.
-//#define GIVE_AI_APEX_WEAPONS 1
+#define GIVE_AI_APEX_WEAPONS 1
 
 // Uncomment this if you want Apex gear on AI. Uniforms, Vests, Backpacks, Helmets,Scopes
-//#define GIVE_AI_APEX_GEAR 1
+#define GIVE_AI_APEX_GEAR 1
 
 // Uncomment this if you want Apex weapons in loot crates
-//#define USE_APEX_WEAPONS_IN_CRATES 1
+#define USE_APEX_WEAPONS_IN_CRATES 1
 
 // Uncomment this if you want Apex vehicles to spawn for AI/missions
 //#define USE_APEX_VEHICLES 1
@@ -82,8 +82,8 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_ShowMarkerCircle				= false;					// Whether or not to show the colored "circle" around a mission marker.
 	DMS_MarkerText_ShowMissionPrefix	= true;						// Whether or not to place a prefix before the mission marker text. Enable this if your players get confused by the marker names :P
 	DMS_MarkerText_MissionPrefix		= "Mission:";				// The text displayed before the mission name in the mission marker.
-	DMS_MarkerText_ShowAICount			= true;						// Whether or not to display the number of remaining AI in the marker name.
-	DMS_MarkerText_ShowAICount_Static	= true;						// Whether or not to display the number of remaining AI in the marker name for STATIC missions.
+	DMS_MarkerText_ShowAICount			= false;						// Whether or not to display the number of remaining AI in the marker name.
+	DMS_MarkerText_ShowAICount_Static	= false;						// Whether or not to display the number of remaining AI in the marker name for STATIC missions.
 	DMS_MarkerText_AIName				= "Units";					// What the AI will be called in the map marker. For example, the marker text can show: "Car Dealer (3 Units remaining)"
 	DMS_MarkerPosRandomization			= false;					// Randomize the position of the circle marker of a mission
 	DMS_MarkerPosRandomRadius			= [25,100];					// Minimum/Maximum distance that the circle marker position will be randomized | DEFAULT: 0 meters to 200 meters
@@ -269,7 +269,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_StaticMissionTypes =			[								// List of STATIC missions with spawn chances.
 											//["saltflats",1]			//<--Example (already imported by default on Altis in map configs)
 											//["slums",1]				//<--Example (already imported by default on Altis in map configs)
-											["occupation",1]		//<--Example
+											//["occupation",1]		//<--Example
 											//["sectorB",1]			//<--Example for Taviana
 										];
 
