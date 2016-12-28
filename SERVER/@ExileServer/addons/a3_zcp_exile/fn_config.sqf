@@ -55,7 +55,7 @@ ZCP_MinPoptabReward = 1000; // Poptabreward is added to this number
 ZCP_ReputationReward = 25; // Respect reward for capping per  player online.
 ZCP_MinReputationReward = 1000; // ZCP_ReputationReward is added to this number
 ZCP_ReputationRewardForGroup = 500; // Each group members gets this amount of reputation ( for the trouble).
-ZCP_CONFIG_GroupDistanceForRespect = 200; // meters to be close to the capper to get the group award
+ZCP_CONFIG_GroupDistanceForRespect = 800; // meters to be close to the capper to get the group award
 
 ZCP_CleanupBase = true; // Let the base dissappear after completing
 ZCP_CleanupBaseWithAIBomber = true; // Cleanup with a airstrike
@@ -139,7 +139,7 @@ ZCP_CONFIG_TerritoryDistance = 500;  // Distance from territories. ( 0 to disabl
 
 ZCP_CONFIG_AI_side = east; // The side where the AI is on.
 ZCP_CONFIG_AI_soldierClass = 'O_G_Soldier_F'; // The class model for the soldier ( This needs to be a soldier from the AI faction! -> otherwise they shoot eachother on spawn)
-ZCP_CONFIG_MaxRandomAIMoney = 100; // Max poptabs on in AI it's inventory. ( Random between 0 -> this number ).
+ZCP_CONFIG_MaxRandomAIMoney = 500; // Max poptabs on in AI it's inventory. ( Random between 0 -> this number ).
 
 // These are used when the cappoint is a city point.
 ZCP_CONFIG_UseCityName = true; // Use City name CP for maker naming instead of ZCP alpha..
