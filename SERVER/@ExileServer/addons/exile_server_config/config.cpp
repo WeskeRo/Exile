@@ -5293,7 +5293,11 @@ class CfgSettings
 			"ItemMap", // Because why not
 			"Exile_Item_XM8",
 			"ItemRadio",
-			"Exile_Item_PlasticBottleFreshWater"
+			"11Rnd_45ACP_Mag",
+			"Exile_Item_PlasticBottleFreshWater",
+			"Exile_Item_EMRE",
+			"hgun_Pistol_heavy_01_F"
+			
 		};
 
 		/**
@@ -5555,7 +5559,7 @@ class CfgSettings
 		// time in ARMA FORMAT << CONFIG
 		// https://community.bistudio.com/wiki/setDate
 
-		staticTime[] = {2039,10,24,15,30};
+		staticTime[] = {2039,10,24,11,00};
 	};
 
 
@@ -5566,13 +5570,13 @@ class CfgSettings
 		*/
 
 		// This needs to match config.cfg serverCommandPassword
-		serverPassword = "7SFUvJ0O6W";
+		serverPassword = "a4h46ssa";
 
 		// Autolocks server until its ready to accept players
-		useAutoLock = 0;
+		useAutoLock = 1;
 
 		// Server will autoLock at that time before restart (minutes)
-		restartAutoLock = 3;
+		restartAutoLock = 5;
 
 		/*
 			Number of hours and minutes of your restart period.
@@ -5582,7 +5586,7 @@ class CfgSettings
 			{4, 0} = Every 4 hours
 			{1, 30} = Every one and a half hour (who the hell would do this?)
 		*/
-		restartTimer[] = {3, 0};
+		restartTimer[] = {4, 0};
 
 		/*
 			Kicks players before restart to prevent gear loss.
@@ -5650,7 +5654,7 @@ class CfgSettings
 		/*
 			A list of events that are active
 		*/
-		enabledEvents[] = {"SupplyBox", "AbandonedSafe", "AmbientFlyOver", "EarthQuake"}; 
+		enabledEvents[] = {"SupplyBox", "AbandonedSafe"}; 
 
 		class EarthQuake 
 		{
@@ -5658,7 +5662,7 @@ class CfgSettings
 			function = "ExileServer_system_event_earthQuake_start";
 			minTime = 60;
 			maxTime = 180;
-			minimumPlayersOnline = 1;
+			minimumPlayersOnline = 0;
 		};
 
 		class SupplyBox 
@@ -5670,9 +5674,9 @@ class CfgSettings
 			*/
 			type = "spawn";
 			function = "ExileServer_system_event_supplyBox_start";
-			minTime = 60; // minutes
-			maxTime = 180; // minutes
-			minimumPlayersOnline = 10;
+			minTime = 25; // minutes
+			maxTime = 45; // minutes
+			minimumPlayersOnline = 1;
 			dropRadius = 500; // 500m around an airport (including the main airport on Altis!)
 			dropAltitude = 100; // altitude of the drop
 			markerTime = 10; // minutes
