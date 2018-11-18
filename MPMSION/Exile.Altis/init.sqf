@@ -6,3 +6,4 @@
 {
 	[] ExecVM "VEMFr_client\sqf\initClient.sqf"; // Client-side part of VEMFr
 };
+sdsd
