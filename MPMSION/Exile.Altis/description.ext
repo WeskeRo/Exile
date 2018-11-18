@@ -66,7 +66,10 @@ showHUD[] =
 
 #include "config.cpp"
 #include "CfgRemoteExec.hpp"
+#include "infiSTAR_defines.hpp"
 #include "infiSTAR_AdminMenu.hpp"
+#include "infiSTAR_chat.hpp"
+#include "infiSTAR_KeyBinds.hpp"
 #include "R3F_LOG\desc_include.h"
 #include "ExAdClient\ExAd.cpp"
 

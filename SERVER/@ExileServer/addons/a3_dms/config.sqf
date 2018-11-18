@@ -61,7 +61,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	/*General settings for dynamic missions*/
 
 	/*General settings for static missions*/
-	DMS_StaticMission					= true;						// Enable/disable static mission system.
+	DMS_StaticMission					= false;						// Enable/disable static mission system.
 	DMS_MaxStaticMissions				= 1;						// Maximum number of Static Missions running at the same time. It's recommended you set this to the same amount of static missions that you have in total. This config will be ignored by "DMS_StaticMissionsOnServerStart".
 	DMS_TimeToFirstStaticMission		= [30,30];					// [Minimum,Maximum] time between first static mission spawn. | DEFAULT: 3-7 minutes.
 	DMS_TimeBetweenStaticMissions		= [900,1800];				// [Minimum,Maximum] time between static missions (if static mission limit is not reached) | DEFAULT: 15-30 mins
@@ -284,7 +284,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 
 	DMS_StaticMissionsOnServerStart =	[								// List of STATIC missions with spawn chances.
 											//"saltflats"			//<--Example
-											//"slums"				//<--Example
+											"slums"				//<--Example
 											//"occupation"			//<--Example
 											//"sectorB"				//<--Example for Taviana
 										];
