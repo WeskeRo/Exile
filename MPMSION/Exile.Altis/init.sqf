@@ -6,4 +6,4 @@
 {
 	[] ExecVM "VEMFr_client\sqf\initClient.sqf"; // Client-side part of VEMFr
 };
-Tutaj ja zmienialem Ghost
+No i cacuszko
